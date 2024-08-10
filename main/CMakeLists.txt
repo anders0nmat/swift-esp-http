@@ -64,6 +64,9 @@ add_custom_target(swift-archive
 		swift build
 			--configuration=release
 			--package-path ${COMPONENT_DIR}
+			#--static-swift-stdlib
+			#-Xswiftc -static-stdlib
+			-Xswiftc -warn-concurrency
 			
 			--triple ${SWIFT_TARGET}
 			-Xswiftc -enable-experimental-feature -Xswiftc Embedded
