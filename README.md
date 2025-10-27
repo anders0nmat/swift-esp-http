@@ -7,9 +7,12 @@ Using the [EspSwift](https://github.com/anders0nmat/EspSwift) Package to use ESP
 
 ## Prerequisites 
 
-- Swift toolchain supporting Swift Embedded
-- ESP-IDF installed
+- Swift toolchain supporting Swift Embedded (tested with 6.1.2)
 - A ESP32 microcontroller running RISC-V (tested with esp32c6)
+- ESP-IDF (v5.2.2) installed
+
+> [!IMPORTANT]
+> Compilation fails on newer versions of ESP-IDF, the last (known) working version is IDF v5.2.2
 
 ## Usage
 
